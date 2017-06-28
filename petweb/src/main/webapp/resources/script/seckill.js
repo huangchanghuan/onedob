@@ -3,13 +3,13 @@ var seckill={
 	//封装秒杀相关ajax的url
 	url:{
 		now:function(){
-			return '/santra/time/now';
+			return '/petweb/time/now';
 		},
 		exposer:function(seckillId){
-			return '/santra/'+seckillId+'/exposer';
+			return '/petweb/'+seckillId+'/exposer';
 		},
 		execution:function(seckillId,md5){
-			return '/santra/'+seckillId+'/'+md5+'/execution';
+			return '/petweb/'+seckillId+'/'+md5+'/execution';
 		}
 	},
 	//验证手机号
@@ -108,7 +108,7 @@ var seckill={
 					var inputPhone=$('#killPhoneKey').val();
 					if(seckill.validatePhone(inputPhone)){
 						//电话写入cookie
-						$.cookie('killPhone',inputPhone,{expires:7,path:'/santra'});
+						$.cookie('killPhone',inputPhone,{expires:7,path:'/petweb'});
 						//刷新页面
 						window.location.reload();
 					}else{

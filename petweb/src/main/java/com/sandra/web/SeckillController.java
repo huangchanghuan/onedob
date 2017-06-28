@@ -1,26 +1,23 @@
 package com.sandra.web;
 
-import java.util.Date;
-import java.util.List;
-
 import com.sandra.dto.Exposer;
+import com.sandra.dto.SeckillExecution;
+import com.sandra.dto.SeckillResult;
 import com.sandra.entity.Seckill;
 import com.sandra.enums.SeckillStatEnum;
+import com.sandra.exception.RepeatKillException;
 import com.sandra.exception.SeckillCloseException;
 import com.sandra.exception.SeckillException;
 import com.sandra.service.SeckillService;
-import com.sandra.dto.SeckillExecution;
-import com.sandra.dto.SeckillResult;
-import com.sandra.exception.RepeatKillException;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * 
@@ -30,7 +27,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/")//url:/项目/模块/资源/{id}/细分  seckill/list
 public class SeckillController {
-//	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired
 	private SeckillService seckillService;
@@ -46,6 +43,8 @@ public class SeckillController {
 	
 	@RequestMapping(value="/{seckillId}/detail",method=RequestMethod.GET)
 	public String detail(@PathVariable("seckillId")Long seckillId,Model model){
+		logger.info("==info====");
+		logger.debug("====debut==");
 		if(seckillId==null){
 			return "redirect:/seckill/list";
 		}
