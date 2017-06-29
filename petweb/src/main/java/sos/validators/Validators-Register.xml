@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<validators>
+	<validator type="string" class="com.sunstar.sos.validators.validator.StringValidator" remark=""/>
+	<validator type="requiredstring" class="com.sunstar.sos.validators.validator.RequiredStringValidator" remark=""/>
+	<!--  
+	<validator type="number" class="com.sunstar.sos.validators.validator." remark=""/>
+	<validator type="email" class="com.sunstar.sos.validators.validator." remark=""/>
+	<validator type="expression" class="com.sunstar.sos.validators.validator." remark=""/>
+	<validator type="date" class="com.sunstar.sos.validators.validator." remark=""/>
+	<validator type="time" class="com.sunstar.sos.validators.validator." remark=""/>
+	<validator type="datetime" class="com.sunstar.sos.validators.validator." remark=""/>
+	-->
+</validators>

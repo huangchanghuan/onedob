@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/petweb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/petweb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/constants/Constants.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/ActionUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/Aes.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/CharUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/DateUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/DoubleUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/EncryptUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/FileUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/HtmlUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/IOUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/ImageUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/MD5Util.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/Md5Encrypt.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/ObjectUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/PayCommonUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/QRCodeUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/RandomUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/SysParametersUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/TimeUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/TokenUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/ValidateUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/XMLUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/XuanwuApi.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/AlipayConfig.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/AlipayCore.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/AlipayNotify.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/AlipaySubmit.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/MD5.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/UtilDate.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/httpClient/HttpProtocolHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/httpClient/HttpRequest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/httpClient/HttpResponse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/alipay/httpClient/HttpResultType.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/page/PageForm.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/page/PageFormData.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/pojo/Param.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/pojo/QRCodeImageObj.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/sandra/util/push/XiaoMiPushHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/org" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/sos" charset="GBK" />
     <file url="file://$PROJECT_DIR$/petweb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/resources/logback.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/webapp/WEB-INF/lib/MiPush_SDK_Server_2_2_16.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/webapp/WEB-INF/lib/QRCode.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/webapp/WEB-INF/lib/batik-awt-util.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/webapp/WEB-INF/lib/postmsg-traffic-2.4.jar" charset="GBK" />
     <file url="file://$PROJECT_DIR$/petweb/src/test" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

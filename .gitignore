@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/vcs.xml
+petweb/src/test/java/org/
+petweb/src/test/resources/
+petweb/target/
+.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml
+.idea/libraries/Maven__org_codehaus_janino_commons_compiler_2_7_8.xml
+.idea/libraries/Maven__org_codehaus_janino_janino_2_7_8.xml
+.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml
+.idea/libraries/lib.xml
+.idea/libraries/petweb.xml
