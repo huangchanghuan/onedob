@@ -35,7 +35,7 @@
 		<!-- mybatis configuration -->
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 		<!-- scan entity-->
-		<property name="typeAliasesPackage" value="com.sandra.entity" />
+		<property name="typeAliasesPackage" value="com.onedob.entity" />
 		<!-- scan mapper -->
 		<property name="mapperLocations" value="classpath:mapper/*.xml" />
 	</bean>
@@ -43,7 +43,7 @@
 	<!--4. inject SqlSessionFactory,scan Dao to Spring  -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="sqlSessionFactoryBeanName" value="SqlSessionFactory" />
-		<property name="basePackage" value="com.sandra.dao" />
+		<property name="basePackage" value="com.onedob.dao" />
 	</bean>
 	
 

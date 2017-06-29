@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.sandra.dao.SuccessKilledDao">
+<mapper namespace="com.onedob.dao.SuccessKilledDao">
 	
 	<insert id="insertSuccessKilled">
 		insert ignore into success_killed(seckill_id,user_phone,state)

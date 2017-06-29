@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 	">
 	<!-- scan service -->
-	<context:component-scan base-package="com.sandra.service" />
+	<context:component-scan base-package="com.onedob.service" />
 
 	<!-- transactionManager -->
 	<bean id="transactionManager"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.sandra.dao.SeckillMapper">
-  <resultMap id="BaseResultMap" type="com.sandra.entity.Seckill">
+<mapper namespace="com.onedob.dao.SeckillMapper">
+  <resultMap id="BaseResultMap" type="com.onedob.entity.Seckill">
     <id column="seckill_id" jdbcType="BIGINT" property="seckillId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="number" jdbcType="INTEGER" property="number" />
@@ -72,7 +72,7 @@
   <sql id="Base_Column_List">
     seckill_id, name, number, start_time, end_time, create_time
   </sql>
-  <select id="selectByExample" parameterType="com.sandra.entity.SeckillExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.onedob.entity.SeckillExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -97,13 +97,13 @@
     delete from seckill
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.sandra.entity.SeckillExample">
+  <delete id="deleteByExample" parameterType="com.onedob.entity.SeckillExample">
     delete from seckill
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.sandra.entity.Seckill">
+  <insert id="insert" parameterType="com.onedob.entity.Seckill">
     insert into seckill (seckill_id, name, number, 
       start_time, end_time, create_time
       )
@@ -111,7 +111,7 @@
       #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.sandra.entity.Seckill">
+  <insert id="insertSelective" parameterType="com.onedob.entity.Seckill">
     insert into seckill
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="seckillId != null">
@@ -154,7 +154,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.sandra.entity.SeckillExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.onedob.entity.SeckillExample" resultType="java.lang.Long">
     select count(*) from seckill
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -198,7 +198,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.sandra.entity.Seckill">
+  <update id="updateByPrimaryKeySelective" parameterType="com.onedob.entity.Seckill">
     update seckill
     <set>
       <if test="name != null">
@@ -219,7 +219,7 @@
     </set>
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.sandra.entity.Seckill">
+  <update id="updateByPrimaryKey" parameterType="com.onedob.entity.Seckill">
     update seckill
     set name = #{name,jdbcType=VARCHAR},
       number = #{number,jdbcType=INTEGER},
@@ -228,7 +228,7 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </update>
-  <resultMap id="BaseResultMap" type="com.sandra.entity.Seckill">
+  <resultMap id="BaseResultMap" type="com.onedob.entity.Seckill">
     <id column="seckill_id" jdbcType="BIGINT" property="seckillId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="number" jdbcType="INTEGER" property="number" />
@@ -278,7 +278,7 @@
     delete from seckill
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.sandra.entity.Seckill">
+  <insert id="insert" parameterType="com.onedob.entity.Seckill">
     insert into seckill (seckill_id, name, number, 
       start_time, end_time, create_time
       )
@@ -286,7 +286,7 @@
       #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.sandra.entity.Seckill">
+  <insert id="insertSelective" parameterType="com.onedob.entity.Seckill">
     insert into seckill
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="seckillId != null">
@@ -329,13 +329,13 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.sandra.entity.SeckillExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.onedob.entity.SeckillExample" resultType="java.lang.Long">
     select count(*) from seckill
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
-  <update id="updateByPrimaryKeySelective" parameterType="com.sandra.entity.Seckill">
+  <update id="updateByPrimaryKeySelective" parameterType="com.onedob.entity.Seckill">
     update seckill
     <set>
       <if test="name != null">
@@ -356,7 +356,7 @@
     </set>
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.sandra.entity.Seckill">
+  <update id="updateByPrimaryKey" parameterType="com.onedob.entity.Seckill">
     update seckill
     set name = #{name,jdbcType=VARCHAR},
       number = #{number,jdbcType=INTEGER},
@@ -365,7 +365,7 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </update>
-  <resultMap id="BaseResultMap" type="com.sandra.entity.Seckill">
+  <resultMap id="BaseResultMap" type="com.onedob.entity.Seckill">
     <id column="seckill_id" jdbcType="BIGINT" property="seckillId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="number" jdbcType="INTEGER" property="number" />
@@ -386,7 +386,7 @@
     delete from seckill
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.sandra.entity.Seckill">
+  <insert id="insert" parameterType="com.onedob.entity.Seckill">
     insert into seckill (seckill_id, name, number, 
       start_time, end_time, create_time
       )
@@ -394,7 +394,7 @@
       #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.sandra.entity.Seckill">
+  <insert id="insertSelective" parameterType="com.onedob.entity.Seckill">
     insert into seckill
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="seckillId != null">
@@ -437,7 +437,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.sandra.entity.Seckill">
+  <update id="updateByPrimaryKeySelective" parameterType="com.onedob.entity.Seckill">
     update seckill
     <set>
       <if test="name != null">
@@ -458,7 +458,7 @@
     </set>
     where seckill_id = #{seckillId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.sandra.entity.Seckill">
+  <update id="updateByPrimaryKey" parameterType="com.onedob.entity.Seckill">
     update seckill
     set name = #{name,jdbcType=VARCHAR},
       number = #{number,jdbcType=INTEGER},

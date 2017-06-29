@@ -30,6 +30,6 @@
 		<property name="suffix" value=".jsp"/>
 	</bean>
 	<!-- 4:扫描web相关的bean -->
-	<context:component-scan base-package="com.sandra.web"/>
+	<context:component-scan base-package="com.onedob.web"/>
 	 
 </beans>
