@@ -1,6 +1,6 @@
 package com.sandra.dto;
 
-import com.sandra.entity.SuccessKilled;
+import com.sandra.entity.SuccessKilled1;
 import com.sandra.enums.SeckillStatEnum;
 
 /**
@@ -19,7 +19,7 @@ public class SeckillExecution {
 	private String stateInfo;
 	
 	//秒杀成功对象
-	private SuccessKilled successKilled;
+	private SuccessKilled1 successKilled;
 
 	
 	
@@ -31,7 +31,7 @@ public class SeckillExecution {
 	}
 
 	public SeckillExecution(long seckillId, SeckillStatEnum statEnum,
-			SuccessKilled successKilled) {
+			SuccessKilled1 successKilled) {
 		super();
 		this.seckillId = seckillId;
 		this.state = statEnum.getState();
@@ -70,11 +70,11 @@ public class SeckillExecution {
 		this.stateInfo = stateInfo;
 	}
 
-	public SuccessKilled getSuccessKilled() {
+	public SuccessKilled1 getSuccessKilled() {
 		return successKilled;
 	}
 
-	public void setSuccessKilled(SuccessKilled successKilled) {
+	public void setSuccessKilled(SuccessKilled1 successKilled) {
 		this.successKilled = successKilled;
 	}
 	

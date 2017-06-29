@@ -2,7 +2,7 @@ package com.sandra.service;
 
 import com.sandra.dto.Exposer;
 import com.sandra.dto.SeckillExecution;
-import com.sandra.entity.Seckill;
+import com.sandra.entity.Seckill1;
 import com.sandra.exception.RepeatKillException;
 import com.sandra.exception.SeckillCloseException;
 import com.sandra.exception.SeckillException;
@@ -19,14 +19,14 @@ public interface SeckillService {
 	 * 查询所有秒杀记录
 	 * @return
 	 */
-	List<Seckill> getSeckillList();
+	List<Seckill1> getSeckillList();
 	
 	/**
 	 * 查询单个秒杀记录
 	 * @param seckillId
 	 * @return
 	 */
-	Seckill getById(long seckillId);
+	Seckill1 getById(long seckillId);
 	
 	/**
 	 * 秒杀开启是输出秒杀接口地址，

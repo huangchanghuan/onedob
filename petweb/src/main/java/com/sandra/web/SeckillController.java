@@ -3,7 +3,7 @@ package com.sandra.web;
 import com.sandra.dto.Exposer;
 import com.sandra.dto.SeckillExecution;
 import com.sandra.dto.SeckillResult;
-import com.sandra.entity.Seckill;
+import com.sandra.entity.Seckill1;
 import com.sandra.enums.SeckillStatEnum;
 import com.sandra.exception.RepeatKillException;
 import com.sandra.exception.SeckillCloseException;
@@ -35,7 +35,7 @@ public class SeckillController {
 	@RequestMapping(value="/list",method=RequestMethod.GET)
 	public String List(Model model){
 		//获取列表页
-		List<Seckill> list=seckillService.getSeckillList();
+		List<Seckill1> list=seckillService.getSeckillList();
 		model.addAttribute("list",list);
 		//List.jsp+model=ModelAndView
 		return "list";//  /WEB-INF/jsp/"list".jsp
@@ -48,7 +48,7 @@ public class SeckillController {
 		if(seckillId==null){
 			return "redirect:/seckill/list";
 		}
-		Seckill seckill=seckillService.getById(seckillId);
+		Seckill1 seckill=seckillService.getById(seckillId);
 		if(seckill==null){
 			return "forward:seckill/list";
 		}

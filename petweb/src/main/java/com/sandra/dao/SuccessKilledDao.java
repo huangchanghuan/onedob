@@ -1,7 +1,7 @@
 package com.sandra.dao;
 
 import org.apache.ibatis.annotations.Param;
-import com.sandra.entity.SuccessKilled;
+import com.sandra.entity.SuccessKilled1;
 
 public interface SuccessKilledDao {
 	/**
@@ -17,5 +17,5 @@ public interface SuccessKilledDao {
 	 * @param seckillId
 	 * @return
 	 */
-	SuccessKilled queryByIdWithSeckill(@Param("seckillId")long seckillId,@Param("userPhone")long userPhone);
+	SuccessKilled1 queryByIdWithSeckill(@Param("seckillId")long seckillId, @Param("userPhone")long userPhone);
 }

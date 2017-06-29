@@ -1,6 +1,6 @@
 package com.sandra.dao;
 
-import com.sandra.entity.Seckill;
+import com.sandra.entity.Seckill1;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
@@ -21,7 +21,7 @@ public interface SeckillDao {
 	 * @param seckillId
 	 * @return
 	 */
-	Seckill queryById(long seckillId);
+	Seckill1 queryById(long seckillId);
 	
 	/**
 	 * 根据偏移量查询秒杀商品列表
@@ -29,5 +29,5 @@ public interface SeckillDao {
 	 * @param limit
 	 * @return
 	 */
-	List<Seckill> queryAll(@Param("offet")int offet,@Param("limit")int limit);
+	List<Seckill1> queryAll(@Param("offet")int offet, @Param("limit")int limit);
 }

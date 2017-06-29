@@ -2,7 +2,7 @@ package com.sandra.entity;
 
 import java.util.Date;
 
-public class SuccessKilled {
+public class SuccessKilled1 {
 	
 	private long seckillId;
 	
@@ -13,7 +13,7 @@ public class SuccessKilled {
 	private Date createTime;
 	
 	//多对一
-	private Seckill seckill;
+	private Seckill1 seckill;
 	
 	
 	
@@ -24,11 +24,11 @@ public class SuccessKilled {
 				+ "]";
 	}
 
-	public Seckill getSeckill() {
+	public Seckill1 getSeckill() {
 		return seckill;
 	}
 
-	public void setSeckill(Seckill seckill) {
+	public void setSeckill(Seckill1 seckill) {
 		this.seckill = seckill;
 	}
 

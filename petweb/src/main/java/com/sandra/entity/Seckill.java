@@ -3,72 +3,63 @@ package com.sandra.entity;
 import java.util.Date;
 
 public class Seckill {
-	private long seckillId;
-	
-	private String name;
-	
-	private int number;
-	
-	private Date startTime;
-	
-	private Date endTime;
-	
-	private Date createTime;
-	
-	@Override
-	public String toString() {
-		return "Seckill [seckillId=" + seckillId + ", name=" + name
-				+ ", number=" + number + ", startTime=" + startTime
-				+ ", endTime=" + endTime + ", createTime=" + createTime + "]";
-	}
+    private Long seckillId;
 
-	public long getSeckillId() {
-		return seckillId;
-	}
+    private String name;
 
-	public void setSeckillId(long seckillId) {
-		this.seckillId = seckillId;
-	}
+    private Integer number;
 
-	public String getName() {
-		return name;
-	}
+    private Date startTime;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    private Date endTime;
 
-	public int getNumber() {
-		return number;
-	}
+    private Date createTime;
 
-	public void setNumber(int number) {
-		this.number = number;
-	}
+    public Long getSeckillId() {
+        return seckillId;
+    }
 
-	public Date getStartTime() {
-		return startTime;
-	}
+    public void setSeckillId(Long seckillId) {
+        this.seckillId = seckillId;
+    }
 
-	public void setStartTime(Date startTime) {
-		this.startTime = startTime;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Date getEndTime() {
-		return endTime;
-	}
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
 
-	public void setEndTime(Date endTime) {
-		this.endTime = endTime;
-	}
+    public Integer getNumber() {
+        return number;
+    }
 
-	public Date getCreateTime() {
-		return createTime;
-	}
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
-	
-	
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Date startTime) {
+        this.startTime = startTime;
+    }
+
+    public Date getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Date endTime) {
+        this.endTime = endTime;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 }

@@ -4,13 +4,13 @@ import com.sandra.dao.SeckillDao;
 import com.sandra.dao.SuccessKilledDao;
 import com.sandra.dto.Exposer;
 import com.sandra.dto.SeckillExecution;
-import com.sandra.entity.Seckill;
-import com.sandra.entity.SuccessKilled;
+import com.sandra.entity.Seckill1;
+import com.sandra.entity.SuccessKilled1;
 import com.sandra.enums.SeckillStatEnum;
+import com.sandra.exception.RepeatKillException;
 import com.sandra.exception.SeckillCloseException;
 import com.sandra.exception.SeckillException;
 import com.sandra.service.SeckillService;
-import com.sandra.exception.RepeatKillException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,12 +36,12 @@ public class SeckillServiceImpl implements SeckillService {
 	private final String slat = "jdsfjojf*&%&^%^&$%^fbsjhyfsu";
 
 	@Override
-	public List<Seckill> getSeckillList() {
+	public List<Seckill1> getSeckillList() {
 		return seckillDao.queryAll(0, 4);
 	}
 
 	@Override
-	public Seckill getById(long seckillId) {
+	public Seckill1 getById(long seckillId) {
 		return seckillDao.queryById(seckillId);
 	}
 
@@ -51,7 +51,7 @@ public class SeckillServiceImpl implements SeckillService {
 	 * @param seckillId
 	 */
 	public Exposer exportSeckillUrl(long seckillId) {
-		Seckill seckill = seckillDao.queryById(seckillId);
+		Seckill1 seckill = seckillDao.queryById(seckillId);
 		if (seckill == null) {//秒杀商品不存在
 			return new Exposer(false, seckillId);
 		}
@@ -107,7 +107,7 @@ public class SeckillServiceImpl implements SeckillService {
 				throw new RepeatKillException("seckill repeated");
 			}else{
 				//秒杀成功
-				SuccessKilled successKilled=successKilledDao.queryByIdWithSeckill(seckillId,userPhone);
+				SuccessKilled1 successKilled=successKilledDao.queryByIdWithSeckill(seckillId,userPhone);
 				return new SeckillExecution(seckillId, SeckillStatEnum.SUCCESS, successKilled);
 			}
 		}
