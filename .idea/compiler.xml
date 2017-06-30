@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="petweb" />
+        <module name="readinglist" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="petweb" target="1.5" />
+      <module name="readinglist" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

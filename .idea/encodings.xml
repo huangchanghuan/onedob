@@ -2,8 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/petweb" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/petweb/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/petweb/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/petweb/src/test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petweb/src/main/java/com/onedob/util/CharUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/readinglist" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

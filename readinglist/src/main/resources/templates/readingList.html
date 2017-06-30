@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<title>reading book list</title>
+</head>
+<body>
+<h2>your book list</h2>
+<div th:unless="${#lists.isEmpty(books)}">
+    <dl th:each="book:${books}">
+        <dt class="">
+            <span th:text="${book.title}">Title</span> by
+            <span th:text="${book.author}">author</span>
+        </dt>
+    </dl>
+</div>
+</body>
+
+</html>
